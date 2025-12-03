@@ -12,46 +12,30 @@
     body{font-family:Poppins, sans-serif;background:var(--bg);color:var(--dark);line-height:1.6;overflow-x:hidden;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
     img{max-width:100%;height:auto;display:block}
 
-    /* HERO full-bleed */
     .hero-outer{background:#fff;border-bottom:1px solid #eee;flex-grow:1}
-    .hero{
-      display:grid;grid-template-columns:1fr;align-items:center;gap:22px;max-width:1100px;margin:0 auto;padding:28px 18px
-    }
-    @media(min-width:900px){
-      .hero{grid-template-columns:0.9fr 1.1fr;gap:40px;padding:40px 24px}
-    }
+    .hero{display:grid;grid-template-columns:1fr;align-items:center;gap:22px;max-width:1100px;margin:0 auto;padding:28px 18px}
+    @media(min-width:900px){.hero{grid-template-columns:0.9fr 1.1fr;gap:40px;padding:40px 24px}}
     .hero-media{display:flex;justify-content:center;align-items:center}
-    .hero-media img{
-      width:min(62vw,300px);aspect-ratio:1/1;object-fit:cover;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.08)
-    }
-    @media(min-width:900px){ .hero-media img{width:70%;max-width:360px} }
+    .hero-media img{width:min(62vw,300px);aspect-ratio:1/1;object-fit:cover;border-radius:50%;box-shadow:0 8px 22px rgba(0,0,0,.08)}
+    @media(min-width:900px){.hero-media img{width:70%;max-width:360px}}
 
     .hero-content h1{font-size:clamp(1.6rem,4vw,2.6rem);color:var(--red);line-height:1.15;margin-bottom:6px}
     .hero-content h2{font-weight:400;color:#8b8b8b;font-size:clamp(1rem,2.4vw,1.35rem);margin-bottom:10px}
     .hero-content .highlight{color:var(--red);font-weight:700;font-size:clamp(.98rem,2.2vw,1.05rem);margin-bottom:4px;display:inline-block}
     .hero-content p{color:#565656;margin:8px 0 16px;font-size:clamp(.95rem,2.2vw,1rem)}
 
-    .cta-knowledge{
-      display:inline-block;width:100%;text-align:center;padding:12px 20px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;border-radius:12px;box-shadow:0 8px 18px rgba(236,0,0,.2);transition:transform .08s ease, box-shadow .2s ease, background .2s ease
-    }
-    @media(min-width:480px){ .cta-knowledge{width:auto} }
-    .cta-knowledge:hover{background:#c80000;box-shadow:0 10px 24px rgba(236,0,0,.26)}
-    .cta-knowledge:active{transform:translateY(1px)}
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .cta-knowledge { flex: 1; min-width: 180px; text-align: center; padding: 12px 20px; background: var(--red); color: #fff; text-decoration: none; font-weight: 700; border-radius: 12px; box-shadow: 0 8px 18px rgba(236,0,0,.2); transition: transform .08s ease, box-shadow .2s ease, background .2s ease; }
+    .cta-knowledge:hover { background: #c80000; box-shadow: 0 10px 24px rgba(236,0,0,.26); }
+    .cta-knowledge:active { transform: translateY(1px); }
 
-    /* Footer */
     footer{background:var(--dark);color:#fff;text-align:center;font-size:.95rem;padding:20px}
     footer a{color:#fff;text-decoration:underline;font-weight:600}
 
-    /* Botão lateral */
-    .btn-analiz{
-      position:fixed;right:12px;bottom:24px;background:#6D6D6D;color:#fff;border:none;padding:12px 18px;font-size:1rem;font-weight:600;border-radius:30px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.2);transition:.3s;z-index:1000
-    }
+    .btn-analiz{position:fixed;right:12px;bottom:24px;background:#6D6D6D;color:#fff;border:none;padding:12px 18px;font-size:1rem;font-weight:600;border-radius:30px;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.2);transition:.3s;z-index:1000}
     .btn-analiz:hover{background:#333}
 
-    /* Sidebar */
-    #analiz-sidebar{
-      position:fixed;top:0;right:-400px;width:min(92vw,380px);height:100%;background:#fff;box-shadow:-2px 0 15px rgba(0,0,0,.2);transition:right .4s ease;padding:40px 25px;overflow-y:auto;z-index:999
-    }
+    #analiz-sidebar{position:fixed;top:0;right:-400px;width:min(92vw,380px);height:100%;background:#fff;box-shadow:-2px 0 15px rgba(0,0,0,.2);transition:right .4s ease;padding:40px 25px;overflow-y:auto;z-index:999}
     #analiz-sidebar.open{right:0}
     #analiz-sidebar img{width:180px;display:block;margin:0 auto 20px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,.1)}
     #analiz-sidebar h3{color:var(--red);text-align:center;margin-bottom:10px}
@@ -70,19 +54,21 @@
 
       <div class="hero-content">
         <h1>Olá, eu sou a Analiz 👩‍💻</h1>
-        <h2>Analista de Dados & exploradora de insights</h2>
+        <h2>Analista de Dados & exploradora de processos</h2>
 
-        <p class="highlight">Cada dado guarda uma hipótese, e cada hipótese é uma oportunidade de entender melhor o mundo.</p>
-        <p>Este espaço nasceu para transformar a forma como olhamos para dados — indo além de métricas, conectando análise, design e propósito.</p>
-        <p>Aqui, cada projeto tem uma história: o atual é sobre <strong>ROI em Dados</strong>, mas o estúdio é um laboratório vivo de aprendizado, onde a Analiz traduz temas complexos em conhecimento claro e acessível.</p>
+        <p class="highlight">O conhecimento da vez é sobre clareza e impacto com dados.</p>
+        <p>Este espaço é um laboratório onde dados viram decisões. Aqui você encontra conteúdos sobre <strong>documentação de processos</strong> e também sobre como medir o <strong>ROI em dados</strong>, tudo com a ajuda de uma IA pronta para traduzir complexidade em clareza.</p>
 
-        <a class="cta-knowledge" href="conhecimento.html">Explorar conhecimento</a>
+        <div class="cta-buttons">
+          <a class="cta-knowledge" href="documentacao.html">A Importância da Documentação</a>
+          <a class="cta-knowledge" href="roi.html">ROI em Dados</a>
+        </div>
       </div>
     </div>
   </section>
 
   <footer>
-    Feito com ❤️ por Dados — mostrando que dados ganham sentido quando viram histórias.
+    Feito com ❤️ por Dados, mostrando que dados ganham sentido quando viram histórias.
   </footer>
 
   <button class="btn-analiz" onclick="toggleAnaliz()">Sobre Analiz</button>
@@ -91,11 +77,10 @@
     <button class="close-btn" onclick="toggleAnaliz()" aria-label="Fechar">×</button>
     <img src="assets/analiz_apresentando.png" alt="Analiz apresentando dados">
     <h3>Analiz</h3>
-    <p class="quote">“Dados só contam histórias quando alguém faz as perguntas certas.”</p>
-    <p>Analiz é uma <strong>analista de dados</strong> criada para aproximar pessoas da inteligência analítica — traduzindo números em significado e tecnologia em clareza.</p>
+    <p class="quote">“Documentar é cuidar: é tornar acessível o que antes era só técnico.”</p>
+    <p>Analiz é uma <strong>analista de dados</strong> criada para aproximar pessoas da inteligência analítica, traduzindo números em significado e processos em clareza.</p>
     <p>Ela nasceu de uma ideia simples: <em>o mundo dos dados pode ser mais humano</em>. A cada projeto, Analiz une lógica, empatia e design para mostrar que análise é, acima de tudo, uma forma de contar histórias verdadeiras.</p>
-    <p>O foco inicial é o <strong>ROI em Dados</strong>, mas o universo de Analiz vai além: processos, automação, visualização e tudo que conecta dados ao impacto real.</p>
-    <p>Mais do que uma personagem, Analiz é parceira de aprendizado — curiosa, empática e apaixonada por clareza. Amanhã ela pode estar explorando outros temas, sempre com o mesmo propósito: <span class="highlight">ajudar você a enxergar o poder dos dados com propósito e beleza.</span></p>
+    <p>Mais do que uma personagem, Analiz é parceira de aprendizado, curiosa, empática e apaixonada por clareza.</p>
   </aside>
 
   <script>
