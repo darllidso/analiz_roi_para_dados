@@ -1,85 +1,17 @@
-# Analiz — ROI em Dados
+# ANALIZ
 
-Site estático do estúdio **Analiz**, com foco em **ROI em Ciência de Dados**.  
-Inclui conceitos baseados em estudo próprio (com base DataCamp), um **simulador simples de ROI**, e acesso a um **agente de IA** para dúvidas sobre ROI.
+**ANALIZ** é um laboratório autoral onde **dados viram decisões**.  
+O projeto reúne estudos aplicados que conectam **finanças, dados e tecnologia**, com foco em **automação de processos**, **documentação orientada à regra de negócio** e **mensuração de impacto (ROI)**.
 
----
+Atualmente, a ANALIZ apresenta:
 
-## 🌐 Deploy
+- **Documentação de processos**  
+  Estudos sobre como estruturar, explicar e manter processos técnicos e financeiros de forma clara, auditável e sustentável.
 
-- **GitHub Pages**: ative em `Settings → Pages → Deploy from a branch (main /root)`.
-- A página inicial é `index.html`.  
-- A página de conhecimento é `conhecimento.html`.
+- **ROI em Dados**  
+  Conteúdos sobre avaliação de retorno em projetos de dados, incluindo um simulador simples de ROI e apoio de IA para análise e interpretação.
 
----
+- **Automação da PDD Fiscal**  
+  Projeto autoral que demonstra a automação de um processo de PDD Fiscal, com foco em governança, rastreabilidade, aplicação de regras fiscais e redução de tempo operacional.
 
-## ✨ Funcionalidades
-
-- **Home** com apresentação da Analiz e CTA.
-- **Página de Conhecimento** com:
-  - Conceitos (origem, história, fórmula, exemplo).
-  - Link para **NotebookLM** com materiais do estúdio.
-  - **Simulador de ROI** (modo simples) com KPIs e faixas de interpretação.
-  - **IA (Agente)**: chat externo com a Analiz (ChatGPT).
-
----
-
-## 📁 Estrutura
-
-```
-/ (raiz)
-├─ index.html               # Página inicial
-├─ conhecimento.html        # Conteúdo de ROI, simulador e IA
-├─ assets/                  # Imagens e mídias (ex.: analiz.png)
-└─ README.md
-```
-
-> Dica: mantenha os caminhos relativos (`assets/...`) para funcionar no GitHub Pages.
-
----
-
-## 🧪 Simulador de ROI
-
-Preencha:
-- **Custos** (dev, treinamento, infra, outros)  
-- **Benefício líquido** (receita adicional + custos evitados + economia de tempo − custos operacionais)
-
-O painel mostra:
-- **Custo total**, **Benefício líquido** e **ROI (%)**
-- Selo: `Negativo`, `Baixo`, `Bom`, `Excelente`
-
-> Valores são interpretativos e servem para **exploração**.
-
----
-
-## 🤖 Agente de IA (ROI)
-
-- Botão “**Abrir Chat com Analiz**” abre um modal com link para o agente no ChatGPT:
-  - `https://chatgpt.com/g/g-68f1401d11748191bc3bd0512a15f29d-data-science-roi`
-- Sugestões de perguntas:
-  - “Meu projeto é X, custo Y, benefício Z. Qual o ROI?”
-  - “Como transformar economia de tempo em valor financeiro?”
-
----
-
-## 📓 NotebookLM
-
-- Link na aba “NotebookLM” (abre em nova aba).
-
----
-
-## 🖌️ Cores e Fonte
-
-- Paleta principal: `#EC0000`, `#333333`, `#6D6D6D`, `#C2C2C2`, `#F0F0F0`  
-- Fonte: **Poppins** (Google Fonts)  
-> Para ajustar, edite as variáveis CSS em `:root` nos arquivos HTML.
-
----
-
-## 📚 Fontes & Créditos
-
-- Base de estudo: [Data Science ROI — DataCamp](https://www.datacamp.com/pt/blog/data-science-roi)  
-- Conteúdo estudado e desenvolvido por **Darlliane**.  
-- Personagem **Analiz**: mascote do estúdio.
-
----
+Os materiais têm caráter **educacional e autoral**, utilizando cenários simulados para demonstrar lógica de negócio, estrutura de automação e boas práticas de documentação.
